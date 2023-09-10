@@ -26,3 +26,6 @@
 # maven
 /target
 /dependency-reduced-pom.xml
+
+# gradle
+.gradle
