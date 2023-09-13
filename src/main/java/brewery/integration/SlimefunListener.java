@@ -1,13 +1,13 @@
-package main.java.brewery.integration;
+package brewery.integration;
 
 import com.Acrobot.ChestShop.Events.ShopCreatedEvent;
-import main.java.brewery.Brew;
-import main.java.brewery.P;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.integration.item.SlimefunPluginItem;
-import main.java.brewery.recipe.BCauldronRecipe;
-import main.java.brewery.recipe.RecipeItem;
-import main.java.brewery.utility.LegacyUtil;
+import brewery.Brew;
+import brewery.P;
+import brewery.filedata.BConfig;
+import brewery.integration.item.SlimefunPluginItem;
+import brewery.recipe.BCauldronRecipe;
+import brewery.recipe.RecipeItem;
+import brewery.utility.LegacyUtil;
 import io.github.thebusybiscuit.slimefun4.api.events.PlayerRightClickEvent;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import org.bukkit.Material;

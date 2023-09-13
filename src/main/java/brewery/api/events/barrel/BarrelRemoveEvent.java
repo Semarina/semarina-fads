@@ -1,6 +1,6 @@
-package main.java.brewery.api.events.barrel;
+package brewery.api.events.barrel;
 
-import main.java.brewery.Barrel;
+import brewery.Barrel;
 import org.bukkit.event.HandlerList;
 import org.jetbrains.annotations.NotNull;
 

@@ -1,8 +1,8 @@
-package main.java.brewery.utility;
+package brewery.utility;
 
-import main.java.brewery.*;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.recipe.BRecipe;
+import brewery.*;
+import brewery.filedata.BConfig;
+import brewery.recipe.BRecipe;
 import org.bstats.bukkit.Metrics;
 import org.bstats.charts.AdvancedPie;
 import org.bstats.charts.DrilldownPie;

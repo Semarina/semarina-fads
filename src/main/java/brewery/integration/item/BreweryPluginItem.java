@@ -1,8 +1,8 @@
-package main.java.brewery.integration.item;
+package brewery.integration.item;
 
-import main.java.brewery.Brew;
-import main.java.brewery.recipe.BRecipe;
-import main.java.brewery.recipe.PluginItem;
+import brewery.Brew;
+import brewery.recipe.BRecipe;
+import brewery.recipe.PluginItem;
 import org.bukkit.ChatColor;
 import org.bukkit.inventory.ItemStack;
 

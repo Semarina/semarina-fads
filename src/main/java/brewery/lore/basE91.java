@@ -1,4 +1,4 @@
-package main.java.brewery.lore;
+package brewery.lore;
 
 /*
  * basE91 encoding/decoding routines

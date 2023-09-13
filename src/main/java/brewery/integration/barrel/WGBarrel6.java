@@ -1,4 +1,4 @@
-package main.java.brewery.integration.barrel;
+package brewery.integration.barrel;
 
 
 import com.sk89q.worldguard.bukkit.RegionQuery;

@@ -1,9 +1,9 @@
-package main.java.brewery.integration;
+package brewery.integration;
 
 import com.Acrobot.ChestShop.Events.ShopCreatedEvent;
-import main.java.brewery.Brew;
-import main.java.brewery.P;
-import main.java.brewery.filedata.BConfig;
+import brewery.Brew;
+import brewery.P;
+import brewery.filedata.BConfig;
 import org.bukkit.Material;
 import org.bukkit.block.Container;
 import org.bukkit.event.EventHandler;

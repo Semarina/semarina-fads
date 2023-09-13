@@ -1,4 +1,4 @@
-package main.java.brewery.recipe;
+package brewery.recipe;
 
 import java.io.DataInputStream;
 

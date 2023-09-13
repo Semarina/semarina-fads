@@ -1,13 +1,13 @@
-package main.java.brewery.listeners;
+package brewery.listeners;
 
-import main.java.brewery.BCauldron;
-import main.java.brewery.Barrel;
-import main.java.brewery.P;
-import main.java.brewery.Wakeup;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.filedata.BData;
-import main.java.brewery.filedata.DataSave;
-import main.java.brewery.utility.BUtil;
+import brewery.BCauldron;
+import brewery.Barrel;
+import brewery.P;
+import brewery.Wakeup;
+import brewery.filedata.BConfig;
+import brewery.filedata.BData;
+import brewery.filedata.DataSave;
+import brewery.utility.BUtil;
 import org.bukkit.World;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;

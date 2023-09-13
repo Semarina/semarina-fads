@@ -22,24 +22,24 @@
 
 
 
-package main.java.brewery;
+package brewery;
 
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.filedata.BData;
-import main.java.brewery.filedata.DataSave;
-import main.java.brewery.filedata.LanguageReader;
-import main.java.brewery.filedata.UpdateChecker;
-import main.java.brewery.integration.ChestShopListener;
-import main.java.brewery.integration.IntegrationListener;
-import main.java.brewery.integration.ShopKeepersListener;
-import main.java.brewery.integration.SlimefunListener;
-import main.java.brewery.integration.barrel.BlocklockerBarrel;
-import main.java.brewery.integration.barrel.LogBlockBarrel;
-import main.java.brewery.listeners.*;
-import main.java.brewery.recipe.*;
-import main.java.brewery.utility.BUtil;
-import main.java.brewery.utility.LegacyUtil;
-import main.java.brewery.utility.Stats;
+import brewery.filedata.BConfig;
+import brewery.filedata.BData;
+import brewery.filedata.DataSave;
+import brewery.filedata.LanguageReader;
+import brewery.filedata.UpdateChecker;
+import brewery.integration.ChestShopListener;
+import brewery.integration.IntegrationListener;
+import brewery.integration.ShopKeepersListener;
+import brewery.integration.SlimefunListener;
+import brewery.integration.barrel.BlocklockerBarrel;
+import brewery.integration.barrel.LogBlockBarrel;
+import brewery.listeners.*;
+import brewery.recipe.*;
+import brewery.utility.BUtil;
+import brewery.utility.LegacyUtil;
+import brewery.utility.Stats;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;

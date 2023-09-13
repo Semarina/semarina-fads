@@ -1,8 +1,8 @@
-package main.java.brewery;
+package brewery;
 
-import main.java.brewery.utility.BUtil;
-import main.java.brewery.utility.BoundingBox;
-import main.java.brewery.utility.LegacyUtil;
+import brewery.utility.BUtil;
+import brewery.utility.BoundingBox;
+import brewery.utility.LegacyUtil;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.configuration.ConfigurationSection;

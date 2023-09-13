@@ -1,4 +1,4 @@
-package main.java.brewery.filedata;
+package brewery.filedata;
 
 
 import java.io.File;
@@ -7,7 +7,7 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import main.java.brewery.P;
+import brewery.P;
 
 public class ReadOldData extends BukkitRunnable {
 

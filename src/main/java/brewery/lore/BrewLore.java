@@ -1,12 +1,12 @@
-package main.java.brewery.lore;
+package brewery.lore;
 
-import main.java.brewery.recipe.BEffect;
-import main.java.brewery.BIngredients;
-import main.java.brewery.recipe.BRecipe;
-import main.java.brewery.Brew;
-import main.java.brewery.P;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.utility.BUtil;
+import brewery.recipe.BEffect;
+import brewery.BIngredients;
+import brewery.recipe.BRecipe;
+import brewery.Brew;
+import brewery.P;
+import brewery.filedata.BConfig;
+import brewery.utility.BUtil;
 import org.bukkit.inventory.meta.PotionMeta;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;

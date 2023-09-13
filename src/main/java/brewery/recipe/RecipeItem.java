@@ -1,8 +1,8 @@
-package main.java.brewery.recipe;
+package brewery.recipe;
 
-import main.java.brewery.P;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.utility.BUtil;
+import brewery.P;
+import brewery.filedata.BConfig;
+import brewery.utility.BUtil;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.ItemStack;

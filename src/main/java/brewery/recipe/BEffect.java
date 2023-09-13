@@ -1,7 +1,7 @@
-package main.java.brewery.recipe;
+package brewery.recipe;
 
-import main.java.brewery.P;
-import main.java.brewery.utility.BUtil;
+import brewery.P;
+import brewery.utility.BUtil;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.meta.PotionMeta;
 import org.bukkit.potion.PotionEffect;

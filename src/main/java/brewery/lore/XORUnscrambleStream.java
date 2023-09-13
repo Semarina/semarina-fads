@@ -1,6 +1,6 @@
-package main.java.brewery.lore;
+package brewery.lore;
 
-import main.java.brewery.P;
+import brewery.P;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.FilterInputStream;

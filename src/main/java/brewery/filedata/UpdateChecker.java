@@ -1,6 +1,6 @@
-package main.java.brewery.filedata;
+package brewery.filedata;
 
-import main.java.brewery.P;
+import brewery.P;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;

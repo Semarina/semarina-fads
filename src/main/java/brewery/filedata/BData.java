@@ -1,13 +1,13 @@
-package main.java.brewery.filedata;
+package brewery.filedata;
 
-import main.java.brewery.*;
-import main.java.brewery.lore.Base91DecoderStream;
-import main.java.brewery.recipe.CustomItem;
-import main.java.brewery.recipe.Ingredient;
-import main.java.brewery.recipe.PluginItem;
-import main.java.brewery.recipe.SimpleItem;
-import main.java.brewery.utility.BUtil;
-import main.java.brewery.utility.BoundingBox;
+import brewery.*;
+import brewery.lore.Base91DecoderStream;
+import brewery.recipe.CustomItem;
+import brewery.recipe.Ingredient;
+import brewery.recipe.PluginItem;
+import brewery.recipe.SimpleItem;
+import brewery.utility.BUtil;
+import brewery.utility.BoundingBox;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;

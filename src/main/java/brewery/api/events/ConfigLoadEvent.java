@@ -1,8 +1,8 @@
-package main.java.brewery.api.events;
+package brewery.api.events;
 
-import main.java.brewery.api.BreweryApi;
-import main.java.brewery.recipe.BCauldronRecipe;
-import main.java.brewery.recipe.BRecipe;
+import brewery.api.BreweryApi;
+import brewery.recipe.BCauldronRecipe;
+import brewery.recipe.BRecipe;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
 import org.jetbrains.annotations.NotNull;

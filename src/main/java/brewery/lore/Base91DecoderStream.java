@@ -1,4 +1,4 @@
-package main.java.brewery.lore;
+package brewery.lore;
 
 import java.io.FilterInputStream;
 import java.io.IOException;

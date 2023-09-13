@@ -1,9 +1,9 @@
-package main.java.brewery.utility;
+package brewery.utility;
 
-import main.java.brewery.BCauldron;
-import main.java.brewery.Barrel;
-import main.java.brewery.P;
-import main.java.brewery.api.events.barrel.BarrelDestroyEvent;
+import brewery.BCauldron;
+import brewery.Barrel;
+import brewery.P;
+import brewery.api.events.barrel.BarrelDestroyEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Color;

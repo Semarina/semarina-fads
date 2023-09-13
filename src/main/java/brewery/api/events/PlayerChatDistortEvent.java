@@ -1,6 +1,6 @@
-package main.java.brewery.api.events;
+package brewery.api.events;
 
-import main.java.brewery.BPlayer;
+import brewery.BPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;

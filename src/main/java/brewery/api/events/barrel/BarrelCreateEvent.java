@@ -1,6 +1,6 @@
-package main.java.brewery.api.events.barrel;
+package brewery.api.events.barrel;
 
-import main.java.brewery.Barrel;
+import brewery.Barrel;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.HandlerList;

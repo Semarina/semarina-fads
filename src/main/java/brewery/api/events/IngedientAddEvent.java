@@ -1,8 +1,8 @@
-package main.java.brewery.api.events;
+package brewery.api.events;
 
-import main.java.brewery.BCauldron;
-import main.java.brewery.recipe.RecipeItem;
-import main.java.brewery.utility.LegacyUtil;
+import brewery.BCauldron;
+import brewery.recipe.RecipeItem;
+import brewery.utility.LegacyUtil;
 import org.bukkit.block.Block;
 import org.bukkit.block.data.BlockData;
 import org.bukkit.block.data.Levelled;

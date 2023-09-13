@@ -1,6 +1,6 @@
-package main.java.brewery.utility;
+package brewery.utility;
 
-import main.java.brewery.P;
+import brewery.P;
 
 public class StringParser {
 

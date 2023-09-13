@@ -1,12 +1,12 @@
-package main.java.brewery.recipe;
+package brewery.recipe;
 
-import main.java.brewery.BIngredients;
-import main.java.brewery.Brew;
-import main.java.brewery.P;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.utility.BUtil;
-import main.java.brewery.utility.StringParser;
-import main.java.brewery.utility.Tuple;
+import brewery.BIngredients;
+import brewery.Brew;
+import brewery.P;
+import brewery.filedata.BConfig;
+import brewery.utility.BUtil;
+import brewery.utility.StringParser;
+import brewery.utility.Tuple;
 import org.bukkit.Color;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;

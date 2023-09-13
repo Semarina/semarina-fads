@@ -1,7 +1,7 @@
-package main.java.brewery.integration.barrel;
+package brewery.integration.barrel;
 
-import main.java.brewery.P;
-import main.java.brewery.api.events.barrel.BarrelAccessEvent;
+import brewery.P;
+import brewery.api.events.barrel.BarrelAccessEvent;
 
 import com.palmergames.bukkit.towny.TownySettings;
 import com.palmergames.bukkit.towny.object.TownyPermission;

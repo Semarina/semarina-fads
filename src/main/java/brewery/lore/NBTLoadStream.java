@@ -1,7 +1,7 @@
-package main.java.brewery.lore;
+package brewery.lore;
 
-import main.java.brewery.P;
-import main.java.brewery.utility.LegacyUtil;
+import brewery.P;
+import brewery.utility.LegacyUtil;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.meta.ItemMeta;
 

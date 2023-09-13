@@ -1,14 +1,14 @@
-package main.java.brewery;
+package brewery;
 
-import main.java.brewery.api.events.brew.BrewModifyEvent;
-import main.java.brewery.lore.Base91EncoderStream;
-import main.java.brewery.lore.BrewLore;
-import main.java.brewery.recipe.BCauldronRecipe;
-import main.java.brewery.recipe.BRecipe;
-import main.java.brewery.recipe.Ingredient;
-import main.java.brewery.recipe.ItemLoader;
-import main.java.brewery.recipe.RecipeItem;
-import main.java.brewery.recipe.PotionColor;
+import brewery.api.events.brew.BrewModifyEvent;
+import brewery.lore.Base91EncoderStream;
+import brewery.lore.BrewLore;
+import brewery.recipe.BCauldronRecipe;
+import brewery.recipe.BRecipe;
+import brewery.recipe.Ingredient;
+import brewery.recipe.ItemLoader;
+import brewery.recipe.RecipeItem;
+import brewery.recipe.PotionColor;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.ItemStack;

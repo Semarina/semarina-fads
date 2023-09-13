@@ -1,4 +1,4 @@
-package main.java.brewery;
+package brewery;
 
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;

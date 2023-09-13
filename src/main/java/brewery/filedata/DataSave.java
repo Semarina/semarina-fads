@@ -1,8 +1,8 @@
-package main.java.brewery.filedata;
+package brewery.filedata;
 
 
-import main.java.brewery.*;
-import main.java.brewery.utility.BUtil;
+import brewery.*;
+import brewery.utility.BUtil;
 import org.bukkit.World;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;

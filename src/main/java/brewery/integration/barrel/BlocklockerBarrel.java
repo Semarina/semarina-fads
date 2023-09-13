@@ -1,11 +1,11 @@
-package main.java.brewery.integration.barrel;
+package brewery.integration.barrel;
 
-import main.java.brewery.Barrel;
-import main.java.brewery.BarrelBody;
-import main.java.brewery.P;
-import main.java.brewery.api.events.barrel.BarrelAccessEvent;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.utility.LegacyUtil;
+import brewery.Barrel;
+import brewery.BarrelBody;
+import brewery.P;
+import brewery.api.events.barrel.BarrelAccessEvent;
+import brewery.filedata.BConfig;
+import brewery.utility.LegacyUtil;
 import nl.rutgerkok.blocklocker.BlockLockerAPIv2;
 import nl.rutgerkok.blocklocker.ProtectableBlocksSettings;
 import nl.rutgerkok.blocklocker.ProtectionType;

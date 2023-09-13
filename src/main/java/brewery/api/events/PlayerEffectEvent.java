@@ -1,4 +1,4 @@
-package main.java.brewery.api.events;
+package brewery.api.events;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;

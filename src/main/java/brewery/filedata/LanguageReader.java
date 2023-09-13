@@ -1,6 +1,6 @@
-package main.java.brewery.filedata;
+package brewery.filedata;
 
-import main.java.brewery.P;
+import brewery.P;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;

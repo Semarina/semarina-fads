@@ -1,7 +1,7 @@
-package main.java.brewery.api.events.brew;
+package brewery.api.events.brew;
 
-import main.java.brewery.Brew;
-import main.java.brewery.lore.BrewLore;
+import brewery.Brew;
+import brewery.lore.BrewLore;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.HandlerList;
 import org.bukkit.inventory.meta.ItemMeta;

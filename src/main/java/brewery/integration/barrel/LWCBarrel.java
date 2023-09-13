@@ -1,7 +1,7 @@
-package main.java.brewery.integration.barrel;
+package brewery.integration.barrel;
 
-import main.java.brewery.Barrel;
-import main.java.brewery.P;
+import brewery.Barrel;
+import brewery.P;
 import com.griefcraft.listeners.LWCPlayerListener;
 import com.griefcraft.lwc.LWC;
 import com.griefcraft.model.Flag;

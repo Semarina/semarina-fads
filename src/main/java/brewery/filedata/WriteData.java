@@ -1,11 +1,11 @@
-package main.java.brewery.filedata;
+package brewery.filedata;
 
 
 import java.io.File;
 
 import org.bukkit.configuration.file.FileConfiguration;
 
-import main.java.brewery.P;
+import brewery.P;
 
 /**
  * Writes the collected Data to file in Async Thread

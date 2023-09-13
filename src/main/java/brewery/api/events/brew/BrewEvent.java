@@ -1,6 +1,6 @@
-package main.java.brewery.api.events.brew;
+package brewery.api.events.brew;
 
-import main.java.brewery.Brew;
+import brewery.Brew;
 import org.bukkit.event.Event;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.jetbrains.annotations.NotNull;

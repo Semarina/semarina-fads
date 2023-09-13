@@ -1,15 +1,15 @@
-package main.java.brewery.listeners;
+package brewery.listeners;
 
-import main.java.brewery.BPlayer;
-import main.java.brewery.BSealer;
-import main.java.brewery.Barrel;
-import main.java.brewery.DistortChat;
-import main.java.brewery.P;
-import main.java.brewery.api.events.barrel.BarrelDestroyEvent;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.filedata.BData;
-import main.java.brewery.integration.barrel.BlocklockerBarrel;
-import main.java.brewery.utility.BUtil;
+import brewery.BPlayer;
+import brewery.BSealer;
+import brewery.Barrel;
+import brewery.DistortChat;
+import brewery.P;
+import brewery.api.events.barrel.BarrelDestroyEvent;
+import brewery.filedata.BConfig;
+import brewery.filedata.BData;
+import brewery.integration.barrel.BlocklockerBarrel;
+import brewery.utility.BUtil;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;

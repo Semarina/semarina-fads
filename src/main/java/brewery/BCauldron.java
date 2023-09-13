@@ -1,12 +1,12 @@
-package main.java.brewery;
+package brewery;
 
-import main.java.brewery.api.events.IngedientAddEvent;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.recipe.BCauldronRecipe;
-import main.java.brewery.recipe.RecipeItem;
-import main.java.brewery.utility.BUtil;
-import main.java.brewery.utility.LegacyUtil;
-import main.java.brewery.utility.Tuple;
+import brewery.api.events.IngedientAddEvent;
+import brewery.filedata.BConfig;
+import brewery.recipe.BCauldronRecipe;
+import brewery.recipe.RecipeItem;
+import brewery.utility.BUtil;
+import brewery.utility.LegacyUtil;
+import brewery.utility.Tuple;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;

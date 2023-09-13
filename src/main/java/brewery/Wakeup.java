@@ -1,6 +1,6 @@
-package main.java.brewery;
+package brewery;
 
-import main.java.brewery.utility.BUtil;
+import brewery.utility.BUtil;
 import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.command.CommandSender;

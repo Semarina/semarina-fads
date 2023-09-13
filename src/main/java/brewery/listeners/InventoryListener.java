@@ -1,8 +1,8 @@
-package main.java.brewery.listeners;
+package brewery.listeners;
 
-import main.java.brewery.*;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.lore.BrewLore;
+import brewery.*;
+import brewery.filedata.BConfig;
+import brewery.lore.BrewLore;
 import org.bukkit.Material;
 import org.bukkit.entity.HumanEntity;
 import org.bukkit.entity.Player;

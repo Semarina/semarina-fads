@@ -1,8 +1,8 @@
-package main.java.brewery.filedata;
+package brewery.filedata;
 
-import main.java.brewery.P;
-import main.java.brewery.utility.LegacyUtil;
-import main.java.brewery.utility.Tuple;
+import brewery.P;
+import brewery.utility.LegacyUtil;
+import brewery.utility.Tuple;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;

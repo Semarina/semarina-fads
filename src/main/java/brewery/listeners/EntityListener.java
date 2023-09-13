@@ -1,9 +1,9 @@
-package main.java.brewery.listeners;
+package brewery.listeners;
 
-import main.java.brewery.Barrel;
-import main.java.brewery.Brew;
-import main.java.brewery.P;
-import main.java.brewery.api.events.barrel.BarrelDestroyEvent;
+import brewery.Barrel;
+import brewery.Brew;
+import brewery.P;
+import brewery.api.events.barrel.BarrelDestroyEvent;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Entity;

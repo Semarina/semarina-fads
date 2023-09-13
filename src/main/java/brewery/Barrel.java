@@ -1,15 +1,15 @@
-package main.java.brewery;
+package brewery;
 
-import main.java.brewery.api.events.barrel.BarrelAccessEvent;
-import main.java.brewery.api.events.barrel.BarrelCreateEvent;
-import main.java.brewery.api.events.barrel.BarrelDestroyEvent;
-import main.java.brewery.api.events.barrel.BarrelRemoveEvent;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.integration.barrel.LogBlockBarrel;
-import main.java.brewery.lore.BrewLore;
-import main.java.brewery.utility.BUtil;
-import main.java.brewery.utility.BoundingBox;
-import main.java.brewery.utility.LegacyUtil;
+import brewery.api.events.barrel.BarrelAccessEvent;
+import brewery.api.events.barrel.BarrelCreateEvent;
+import brewery.api.events.barrel.BarrelDestroyEvent;
+import brewery.api.events.barrel.BarrelRemoveEvent;
+import brewery.filedata.BConfig;
+import brewery.integration.barrel.LogBlockBarrel;
+import brewery.lore.BrewLore;
+import brewery.utility.BUtil;
+import brewery.utility.BoundingBox;
+import brewery.utility.LegacyUtil;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;

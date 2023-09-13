@@ -1,8 +1,8 @@
-package main.java.brewery.utility;
+package brewery.utility;
 
-import main.java.brewery.BPlayer;
-import main.java.brewery.P;
-import main.java.brewery.filedata.BConfig;
+import brewery.BPlayer;
+import brewery.P;
+import brewery.filedata.BConfig;
 
 import java.sql.*;
 import java.util.UUID;

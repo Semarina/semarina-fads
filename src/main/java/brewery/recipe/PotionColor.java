@@ -1,6 +1,6 @@
-package main.java.brewery.recipe;
+package brewery.recipe;
 
-import main.java.brewery.P;
+import brewery.P;
 import org.bukkit.Color;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;

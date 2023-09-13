@@ -25,7 +25,7 @@
  * authors and contributors and should not be interpreted as representing official policies,
  * either expressed or implied, of anybody else.
  */
-package main.java.brewery.utility;
+package brewery.utility;
 
 import org.jetbrains.annotations.Contract;
 

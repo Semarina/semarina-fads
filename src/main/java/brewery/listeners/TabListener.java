@@ -1,9 +1,9 @@
-package main.java.brewery.listeners;
+package brewery.listeners;
 
 
-import main.java.brewery.recipe.BRecipe;
-import main.java.brewery.utility.PermissionUtil;
-import main.java.brewery.utility.Tuple;
+import brewery.recipe.BRecipe;
+import brewery.utility.PermissionUtil;
+import brewery.utility.Tuple;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
@@ -12,7 +12,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.*;
 import java.util.stream.Collectors;
 
-import static main.java.brewery.utility.PermissionUtil.BPermission.*;
+import static brewery.utility.PermissionUtil.BPermission.*;
 
 public class TabListener implements TabCompleter {
 	private static final Map<String, PermissionUtil.BPermission> COMMAND_COMPLETIONS = new HashMap<>(10);

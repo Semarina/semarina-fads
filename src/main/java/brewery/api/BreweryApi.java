@@ -1,12 +1,12 @@
-package main.java.brewery.api;
+package brewery.api;
 
-import main.java.brewery.BCauldron;
-import main.java.brewery.BPlayer;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.recipe.BCauldronRecipe;
-import main.java.brewery.recipe.BRecipe;
-import main.java.brewery.Barrel;
-import main.java.brewery.Brew;
+import brewery.BCauldron;
+import brewery.BPlayer;
+import brewery.filedata.BConfig;
+import brewery.recipe.BCauldronRecipe;
+import brewery.recipe.BRecipe;
+import brewery.Barrel;
+import brewery.Brew;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;

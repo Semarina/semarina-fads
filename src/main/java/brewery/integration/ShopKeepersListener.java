@@ -1,8 +1,8 @@
-package main.java.brewery.integration;
+package brewery.integration;
 
-import main.java.brewery.Brew;
-import main.java.brewery.P;
-import main.java.brewery.filedata.BConfig;
+import brewery.Brew;
+import brewery.P;
+import brewery.filedata.BConfig;
 import com.nisovin.shopkeepers.api.events.PlayerOpenUIEvent;
 import com.nisovin.shopkeepers.api.ui.DefaultUITypes;
 import org.bukkit.Material;

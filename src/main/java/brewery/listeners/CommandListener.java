@@ -1,14 +1,14 @@
-package main.java.brewery.listeners;
+package brewery.listeners;
 
-import main.java.brewery.*;
-import main.java.brewery.api.events.brew.BrewModifyEvent;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.recipe.BRecipe;
-import main.java.brewery.recipe.Ingredient;
-import main.java.brewery.recipe.RecipeItem;
-import main.java.brewery.utility.BUtil;
-import main.java.brewery.utility.PermissionUtil;
-import main.java.brewery.utility.Tuple;
+import brewery.*;
+import brewery.api.events.brew.BrewModifyEvent;
+import brewery.filedata.BConfig;
+import brewery.recipe.BRecipe;
+import brewery.recipe.Ingredient;
+import brewery.recipe.RecipeItem;
+import brewery.utility.BUtil;
+import brewery.utility.PermissionUtil;
+import brewery.utility.Tuple;
 import org.bukkit.Material;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -23,7 +23,7 @@ import org.jetbrains.annotations.Nullable;
 import java.util.ArrayList;
 import java.util.Locale;
 
-import static main.java.brewery.utility.PermissionUtil.BPermission.*;
+import static brewery.utility.PermissionUtil.BPermission.*;
 
 public class CommandListener implements CommandExecutor {
 

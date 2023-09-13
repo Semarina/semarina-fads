@@ -1,11 +1,11 @@
-package main.java.brewery.listeners;
+package brewery.listeners;
 
-import main.java.brewery.*;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.filedata.UpdateChecker;
-import main.java.brewery.utility.BUtil;
-import main.java.brewery.utility.LegacyUtil;
-import main.java.brewery.utility.PermissionUtil;
+import brewery.*;
+import brewery.filedata.BConfig;
+import brewery.filedata.UpdateChecker;
+import brewery.utility.BUtil;
+import brewery.utility.LegacyUtil;
+import brewery.utility.PermissionUtil;
 import org.bukkit.GameMode;
 import org.bukkit.Material;
 import org.bukkit.Sound;

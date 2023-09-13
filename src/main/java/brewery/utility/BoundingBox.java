@@ -1,4 +1,4 @@
-package main.java.brewery.utility;
+package brewery.utility;
 
 import org.bukkit.Location;
 import org.bukkit.block.Block;

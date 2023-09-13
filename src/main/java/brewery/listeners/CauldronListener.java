@@ -1,8 +1,8 @@
-package main.java.brewery.listeners;
+package brewery.listeners;
 
-import main.java.brewery.BCauldron;
-import main.java.brewery.P;
-import main.java.brewery.utility.LegacyUtil;
+import brewery.BCauldron;
+import brewery.P;
+import brewery.utility.LegacyUtil;
 import org.bukkit.Material;
 import org.bukkit.block.BlockState;
 import org.bukkit.block.data.Levelled;

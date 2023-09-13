@@ -1,6 +1,6 @@
-package main.java.brewery;
+package brewery;
 
-import main.java.brewery.api.events.PlayerChatDistortEvent;
+import brewery.api.events.PlayerChatDistortEvent;
 import org.bukkit.event.block.SignChangeEvent;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 import org.bukkit.event.player.PlayerCommandPreprocessEvent;

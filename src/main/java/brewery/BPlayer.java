@@ -1,14 +1,14 @@
-package main.java.brewery;
+package brewery;
 
-import main.java.brewery.api.events.PlayerEffectEvent;
-import main.java.brewery.api.events.PlayerPukeEvent;
-import main.java.brewery.api.events.PlayerPushEvent;
-import main.java.brewery.api.events.brew.BrewDrinkEvent;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.lore.BrewLore;
-import main.java.brewery.recipe.BEffect;
-import main.java.brewery.utility.BUtil;
-import main.java.brewery.utility.PermissionUtil;
+import brewery.api.events.PlayerEffectEvent;
+import brewery.api.events.PlayerPukeEvent;
+import brewery.api.events.PlayerPushEvent;
+import brewery.api.events.brew.BrewDrinkEvent;
+import brewery.filedata.BConfig;
+import brewery.lore.BrewLore;
+import brewery.recipe.BEffect;
+import brewery.utility.BUtil;
+import brewery.utility.PermissionUtil;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Location;

@@ -1,7 +1,7 @@
-package main.java.brewery.integration.barrel;
+package brewery.integration.barrel;
 
-import main.java.brewery.utility.LegacyUtil;
-import main.java.brewery.P;
+import brewery.utility.LegacyUtil;
+import brewery.P;
 import de.diddiz.LogBlock.Actor;
 
 import java.util.ArrayList;

@@ -1,13 +1,13 @@
-package main.java.brewery;
+package brewery;
 
-import main.java.brewery.api.events.brew.BrewModifyEvent;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.filedata.ConfigUpdater;
-import main.java.brewery.lore.*;
-import main.java.brewery.recipe.BEffect;
-import main.java.brewery.recipe.BRecipe;
-import main.java.brewery.recipe.PotionColor;
-import main.java.brewery.utility.BUtil;
+import brewery.api.events.brew.BrewModifyEvent;
+import brewery.filedata.BConfig;
+import brewery.filedata.ConfigUpdater;
+import brewery.lore.*;
+import brewery.recipe.BEffect;
+import brewery.recipe.BRecipe;
+import brewery.recipe.PotionColor;
+import brewery.utility.BUtil;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.inventory.BrewerInventory;

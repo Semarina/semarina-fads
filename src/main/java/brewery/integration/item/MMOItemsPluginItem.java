@@ -1,8 +1,8 @@
-package main.java.brewery.integration.item;
+package brewery.integration.item;
 
-import main.java.brewery.P;
-import main.java.brewery.filedata.BConfig;
-import main.java.brewery.recipe.PluginItem;
+import brewery.P;
+import brewery.filedata.BConfig;
+import brewery.recipe.PluginItem;
 import io.lumine.mythic.lib.api.item.NBTItem;
 import org.bukkit.inventory.ItemStack;
 

@@ -1,6 +1,6 @@
-package main.java.brewery.utility;
+package brewery.utility;
 
-import main.java.brewery.P;
+import brewery.P;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.data.BlockData;
@@ -16,9 +16,9 @@ import java.lang.reflect.Method;
 import java.util.HashSet;
 import java.util.Set;
 
-import static main.java.brewery.BCauldron.EMPTY;
-import static main.java.brewery.BCauldron.FULL;
-import static main.java.brewery.BCauldron.SOME;
+import static brewery.BCauldron.EMPTY;
+import static brewery.BCauldron.FULL;
+import static brewery.BCauldron.SOME;
 
 @SuppressWarnings({"JavaReflectionMemberAccess", "deprecation"})
 public class LegacyUtil {

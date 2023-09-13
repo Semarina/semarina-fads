@@ -1,6 +1,6 @@
-package main.java.brewery;
+package brewery;
 
-import main.java.brewery.lore.BrewLore;
+import brewery.lore.BrewLore;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
