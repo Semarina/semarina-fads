@@ -7,7 +7,6 @@ plugins {
 }
 
 repositories {
-    mavenLocal()
     maven {
         url = uri("https://jitpack.io")
     }
@@ -41,12 +40,13 @@ repositories {
     maven {
         url = uri("https://repo.maven.apache.org/maven2/")
     }
+    mavenCentral()
 }
 
 dependencies {
     compileOnly("org.bstats:bstats-bukkit:3.0.0")
     compileOnly("org.jetbrains:annotations:16.0.2")
-    compileOnly("org.spigotmc:spigot-api:1.19-R0.1-SNAPSHOT")
+    compileOnly("org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT")
     compileOnly("net.milkbowl.vault:VaultAPI:1.6")
     compileOnly("com.sk89q:worldguard:6.1")
     compileOnly("com.sk89q.worldedit:worldedit-bukkit:7.2.11-beta-01")
