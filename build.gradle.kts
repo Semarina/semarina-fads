@@ -35,18 +35,19 @@ repositories {
         url = uri("https://mvn.lumine.io/repository/maven/")
     }
     maven {
-        url = uri("https://nexus.lichtspiele.org/repository/releases/")
+        url = uri("https://nexus.phoenixdevt.fr/repository/maven-public/")
     }
     maven {
         url = uri("https://repo.maven.apache.org/maven2/")
     }
+    maven("https://repo.purpurmc.org/snapshots")
     mavenCentral()
 }
 
 dependencies {
     compileOnly("org.bstats:bstats-bukkit:3.0.0")
     compileOnly("org.jetbrains:annotations:16.0.2")
-    compileOnly("org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT")
+    compileOnly("org.purpurmc.purpur:purpur-api:1.20.1-R0.1-SNAPSHOT")
     compileOnly("net.milkbowl.vault:VaultAPI:1.6")
     compileOnly("com.sk89q:worldguard:6.1")
     compileOnly("com.sk89q.worldedit:worldedit-bukkit:7.2.11-beta-01")
@@ -56,7 +57,7 @@ dependencies {
     compileOnly("com.github.TechFortress:GriefPrevention:16.17.1")
     compileOnly("de.diddiz:logblock:1.16.5.1")
     compileOnly("com.github.Slimefun:Slimefun4:RC-32")
-    compileOnly("io.lumine:MythicLib-dist:1.3.1")
+    compileOnly("io.lumine:MythicLib-dist:1.6.2-SNAPSHOT")
     compileOnly("com.acrobot.chestshop:chestshop:3.12.2")
     compileOnly("com.github.TownyAdvanced:Towny:0.98.3.0")
     compileOnly("com.nisovin.shopkeepers:ShopkeepersAPI:2.16.0")
