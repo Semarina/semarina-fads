@@ -81,7 +81,7 @@ dependencies {
 application {
     mainClass.set("brewery.P")
     group = "main.java"
-    version = "3.1.1"
-    description = "Brewery"
+    version = "0.3"
+    description = "Semarina Foods & Drinks"
     java.sourceCompatibility = JavaVersion.VERSION_17
 }
