@@ -13,6 +13,7 @@ import brewery.integration.barrel.WGBarrel6;
 import brewery.integration.barrel.WGBarrel7;
 import brewery.integration.item.BreweryPluginItem;
 import brewery.integration.item.MMOItemsPluginItem;
+import brewery.integration.item.OraxenPluginItem;
 import brewery.integration.item.SlimefunPluginItem;
 import brewery.recipe.BCauldronRecipe;
 import brewery.recipe.BRecipe;
@@ -260,6 +261,7 @@ public class BConfig {
 
 		PluginItem.registerForConfig("brewery", BreweryPluginItem::new);
 		PluginItem.registerForConfig("mmoitems", MMOItemsPluginItem::new);
+		PluginItem.registerForConfig("oraxen", OraxenPluginItem::new);
 		PluginItem.registerForConfig("slimefun", SlimefunPluginItem::new);
 		PluginItem.registerForConfig("exoticgarden", SlimefunPluginItem::new);
 
