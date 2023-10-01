@@ -42,7 +42,8 @@ public class BlockListener implements Listener {
 
 	public static boolean hasBarrelLine(String[] lines) {
 		for (String line : lines) {
-			if (line.equalsIgnoreCase("Barrel") || line.equalsIgnoreCase(P.p.languageReader.get("Etc_Barrel"))) {
+			//WARN: Changed Barrel name to Cask here
+			if (line.equalsIgnoreCase("Cask") || line.equalsIgnoreCase(P.p.languageReader.get("Etc_Barrel"))) {
 				return true;
 			}
 		}

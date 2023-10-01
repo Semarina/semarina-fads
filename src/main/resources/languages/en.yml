@@ -21,14 +21,14 @@ Brew_Alc: Alc &v1ml
 CMD_Copy_Error: '&6&v1 &cPotions did not fit into your inventory'
 CMD_Info_Drunk: '&v1 is &6&v2% &fdrunk, with a quality of &6&v3'
 CMD_Info_NotDrunk: '&v1 is not drunk'
-CMD_NonStatic: '&ePotion is not static anymore and will normally age in barrels.'
+CMD_NonStatic: '&ePotion is not static anymore and will normally age in casks.'
 CMD_Player: '&a&v1 is now &6&v2% &adrunk, with a quality of &6&v3'
 CMD_Player_Error: '&cThe quality has to be between 1 and 10!'
 CMD_Reload: '&aConfig was successfully reloaded'
 CMD_Created: '&aBrew Created'
 CMD_Configname: '&aName for the Config is: &f&v1'
 CMD_Configname_Error: '&cCould not find item in your hand'
-CMD_Static: '&aPotion is now static and will not change in barrels or brewing stands.'
+CMD_Static: '&aPotion is now static and will not change in casks or brewing stands.'
 CMD_UnLabel: '&aLabel removed!'
 CMD_Drink: '&aYou drank one &v1'
 CMD_DrinkOther: '&a&v1 drinks one &v2'
@@ -39,7 +39,7 @@ Error_ItemNotPotion: '&cThe item in your hand could not be identified as a potio
 Error_SealingTableDisabled: '&cThe Sealing Table is disabled'
 Error_SealedAlwaysStatic: 'Sealed Brews are always static!'
 Error_AlreadyUnlabeled: '&cThe Brew in your hand is already unlabeled!'
-Error_NoBarrelAccess: '&cYou don''t have permissions to access this barrel!'
+Error_NoBarrelAccess: '&cYou don''t have permissions to access this cask!'
 Error_NoBrewName: '&cNo Recipe with Name: ''&v1&c'' found!'
 Error_NoPermissions: '&cYou don''t have permissions to do this!'
 Error_PlayerCommand: '&cThis command can only be executed as a player!'
@@ -50,7 +50,7 @@ Error_YmlRead: 'Could not read file config.yml, please make sure the file is in 
 Error_NoPlayer: 'Player not found: &v1'
 
 # Etc
-Etc_Barrel: Barrel
+Etc_Barrel: Cask
 Etc_Page: Page
 Etc_Usage: 'Usage:'
 Etc_SealingTable: Brew Sealing Table
@@ -79,15 +79,15 @@ Help_Puke: '&6/brew puke [Player] [Amount] &9Makes you or [Player] puke'
 Help_Drink: '&6/brew drink <Recipe> [Quality] [Player] &9Simulates [Player] drinking a Brew'
 
 # Perms
-Perms_NoBarrelCreate: '&cYou don''t have permissions to create barrels!'
-Perms_NoBigBarrelCreate: '&cYou don''t have permissions to create big barrels!'
+Perms_NoBarrelCreate: '&cYou don''t have permissions to create casks!'
+Perms_NoBigBarrelCreate: '&cYou don''t have permissions to create big casks!'
 Perms_NoCauldronFill: '&cYou don''t have permissions to fill bottles from this cauldron!'
 Perms_NoCauldronInsert: '&cYou don''t have permissions to put ingredients into cauldrons!'
-Perms_NoSmallBarrelCreate: '&cYou don''t have permissions to create small barrels!'
+Perms_NoSmallBarrelCreate: '&cYou don''t have permissions to create small casks!'
 
 # Player
-Player_BarrelCreated: Barrel created
-Player_BarrelFull: '&cThis barrel can''t hold any more drinks'
+Player_BarrelCreated: Cask created
+Player_BarrelFull: '&cThis cask can''t hold any more drinks'
 Player_CantDrink: You can't drink any more.
 Player_CauldronInfo1: This cauldron has been boiling for &v1 minutes.
 Player_CauldronInfo2: This cauldron has just started boiling.
