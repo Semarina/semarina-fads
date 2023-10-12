@@ -314,7 +314,7 @@ public class P extends JavaPlugin {
 	// Utility
 
 	public void msg(CommandSender sender, String msg) {
-		sender.sendMessage(color("&2[Brewery] &f" + msg));
+		sender.sendMessage(color("&2[FaDs] &f" + msg));
 	}
 
 	public void log(String msg) {
