@@ -62,6 +62,7 @@ dependencies {
     compileOnly("com.github.TownyAdvanced:Towny:0.98.3.0")
     compileOnly("com.nisovin.shopkeepers:ShopkeepersAPI:2.16.0")
     compileOnly("nl.rutgerkok:blocklocker:1.10.4")
+	implementation(files("libs/SemarinaCore.jar"))
 }
 
 // java {
