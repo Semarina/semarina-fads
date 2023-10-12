@@ -213,6 +213,9 @@ public class BPlayer {
 		if (thirst > 0) {
 			P.p.semarinaAPI.hydrate(player.getUniqueId(), thirst);
 		}
+		if (thirst < 0){
+			P.p.semarinaAPI.dehydrate(player.getUniqueId(), thirst);
+		}
 		return true;
 	}
 
