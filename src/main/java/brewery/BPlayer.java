@@ -175,6 +175,7 @@ public class BPlayer {
 
 		int brewAlc = drinkEvent.getAddedAlcohol();
 		int quality = drinkEvent.getQuality();
+		float thirst = drinkEvent.getThirst();
 		List<PotionEffect> effects = getBrewEffects(brew.getEffects(), quality);
 
 		applyEffects(effects, player, PlayerEffectEvent.EffectType.DRINK);
@@ -207,6 +208,10 @@ public class BPlayer {
 			bPlayer.remove();
 		} else {
 			bPlayer.syncToSQL(false);
+		}
+
+		if (thirst > 0) {
+			// TODO: add semarina API here
 		}
 		return true;
 	}

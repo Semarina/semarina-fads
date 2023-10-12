@@ -42,6 +42,7 @@ public class Brew implements Cloneable {
 
 	private BIngredients ingredients;
 	private int quality;
+	private float thirst;
 	private int alc;
 	private byte distillRuns;
 	private float ageTime;
@@ -69,6 +70,7 @@ public class Brew implements Cloneable {
 		this.ingredients = ingredients;
 		this.quality = quality;
 		this.alc = alc;
+		this.thirst = recipe.getThirst();
 		this.currentRecipe = recipe;
 		touch();
 	}
@@ -76,10 +78,11 @@ public class Brew implements Cloneable {
 	/**
 	 * Loading a Brew with all values set
 	 */
-	public Brew(BIngredients ingredients, int quality, int alc, byte distillRuns, float ageTime, float wood, String recipe, boolean unlabeled, boolean immutable, int lastUpdate) {
+	public Brew(BIngredients ingredients, int quality, int alc, float thirst, byte distillRuns, float ageTime, float wood, String recipe, boolean unlabeled, boolean immutable, int lastUpdate) {
 		this.ingredients = ingredients;
 		this.quality = quality;
 		this.alc = alc;
+		this.thirst = thirst;
 		this.distillRuns = distillRuns;
 		this.ageTime = ageTime;
 		this.wood = wood;
@@ -286,6 +289,7 @@ public class Brew implements Cloneable {
 		if (equals(brew)) return true;
 		return quality == brew.quality &&
 				alc == brew.alc &&
+				thirst == brew.thirst &&
 				distillRuns == brew.distillRuns &&
 				Float.compare(brew.ageTime, ageTime) == 0 &&
 				Float.compare(brew.wood, wood) == 0 &&
@@ -317,6 +321,7 @@ public class Brew implements Cloneable {
 				ingredients + " ingredients" +
 				", quality=" + quality +
 				", alc=" + alc +
+				", thirst=" + thirst +
 				", distillRuns=" + distillRuns +
 				", ageTime=" + ageTime +
 				", wood=" + wood +
@@ -396,6 +401,9 @@ public class Brew implements Cloneable {
 
 	public int getQuality() {
 		return quality;
+	}
+	public float getThirst() {
+		return thirst;
 	}
 
 	public boolean canDistill() {
@@ -479,6 +487,7 @@ public class Brew implements Cloneable {
 			quality--;
 		}
 		alc = calcAlcohol();
+		thirst = currentRecipe.getThirst(); // TODO: rethink
 
 		setStatic(true, potion);
 		unLabel(potion);
@@ -644,7 +653,7 @@ public class Brew implements Cloneable {
 		}
 		alc = calcAlcohol();
 		updateCustomModelData(potionMeta);
-
+		thirst = currentRecipe.getThirst(); // TODO: rethink
 		// Distill Lore
 		if (currentRecipe != null && BConfig.colorInBrewer != BrewLore.hasColorLore(potionMeta)) {
 			lore.convertLore(BConfig.colorInBrewer);
@@ -718,6 +727,7 @@ public class Brew implements Cloneable {
 			}
 		}
 		alc = calcAlcohol();
+		thirst = currentRecipe.getThirst(); // TODO: rethink
 		updateCustomModelData(potionMeta);
 
 		// Lore
@@ -931,7 +941,7 @@ public class Brew implements Cloneable {
 
 	private void loadFromStream(DataInputStream in, byte dataVersion) throws IOException {
 		quality = in.readByte();
-		int bools = in.readUnsignedByte();
+		int bools = in.readUnsignedByte(); //TODO: this is byte which is 0-255 only. change it so that i could inject thirst into it
 		if ((bools & 64) != 0) {
 			alc = in.readShort();
 		}
@@ -1073,8 +1083,8 @@ public class Brew implements Cloneable {
 	/**
 	 * Load potion data from data file for backwards compatibility
 	 */
-	public static void loadLegacy(BIngredients ingredients, int uid, int quality, int alc, byte distillRuns, float ageTime, float wood, String recipe, boolean unlabeled, boolean persistent, boolean stat, int lastUpdate) {
-		Brew brew = new Brew(ingredients, quality, alc, distillRuns, ageTime, wood, recipe, unlabeled, stat, lastUpdate);
+	public static void loadLegacy(BIngredients ingredients, int uid, int quality, int alc, float thirst, byte distillRuns, float ageTime, float wood, String recipe, boolean unlabeled, boolean persistent, boolean stat, int lastUpdate) {
+		Brew brew = new Brew(ingredients, quality, alc, thirst, distillRuns, ageTime, wood, recipe, unlabeled, stat, lastUpdate);
 		brew.persistent = persistent;
 		if (brew.lastUpdate <= 0) {
 			// We failed to save the lastUpdate, restart the countdown
@@ -1148,6 +1158,9 @@ public class Brew implements Cloneable {
 			if (brew.alc != 0) {
 				idConfig.set("alc", brew.alc);
 			}
+			if (brew.thirst != 0) {
+				idConfig.set("thirst", brew.thirst);
+			}
 			if (brew.distillRuns != 0) {
 				idConfig.set("distillRuns", brew.distillRuns);
 			}
@@ -1176,5 +1189,4 @@ public class Brew implements Cloneable {
 			idConfig.set("ingId", brew.ingredients.saveLegacy(config.getParent()));
 		}
 	}
-
 }

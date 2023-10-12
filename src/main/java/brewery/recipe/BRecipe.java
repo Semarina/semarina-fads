@@ -46,6 +46,7 @@ public class BRecipe {
 	// outcome
 	private PotionColor color; // color of the distilled/finished potion
 	private int alcohol; // Alcohol in perfect potion
+	private float thirst; // How much it satisfies thirst
 	private List<Tuple<Integer, String>> lore; // Custom Lore on the Potion. The int is for Quality Lore, 0 = any, 1,2,3 = Bad,Middle,Good
 	private int[] cmData; // Custom Model Data[3] for each quality
 
@@ -122,6 +123,7 @@ public class BRecipe {
 		recipe.age = configSectionRecipes.getInt(recipeId + ".age", 0);
 		recipe.difficulty = configSectionRecipes.getInt(recipeId + ".difficulty", 0);
 		recipe.alcohol = configSectionRecipes.getInt(recipeId + ".alcohol", 0);
+		recipe.thirst = configSectionRecipes.getInt(recipeId + ".thirst", 0);
 
 		String col = configSectionRecipes.getString(recipeId + ".color", "BLUE");
 		recipe.color = PotionColor.fromString(col);
@@ -460,7 +462,7 @@ public class BRecipe {
 
 		BIngredients bIngredients = new BIngredients(list, cookingTime);
 
-		return new Brew(bIngredients, quality, 0, distillruns, getAge(), wood, getRecipeName(), false, true, 0);
+		return new Brew(bIngredients, quality, 0, thirst, distillruns, getAge(), wood, getRecipeName(), false, true, 0);
 	}
 
 	public void updateAcceptedLists() {
@@ -585,6 +587,7 @@ public class BRecipe {
 	public int getAlcohol() {
 		return alcohol;
 	}
+	public float getThirst() { return thirst; }
 
 	public boolean hasLore() {
 		return lore != null && !lore.isEmpty();

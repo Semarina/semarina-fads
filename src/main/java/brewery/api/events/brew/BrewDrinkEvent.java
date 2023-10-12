@@ -21,6 +21,7 @@ public class BrewDrinkEvent extends BrewEvent implements Cancellable {
 	private final BPlayer bPlayer;
 	private int alc;
 	private int quality;
+	private float thirst;
 	private boolean cancelled;
 
 	public BrewDrinkEvent(Brew brew, ItemMeta meta, Player player, BPlayer bPlayer) {
@@ -29,6 +30,7 @@ public class BrewDrinkEvent extends BrewEvent implements Cancellable {
 		this.bPlayer = bPlayer;
 		alc = calcAlcWSensitivity(brew.getOrCalcAlc());
 		quality = brew.getQuality();
+		thirst = brew.getThirst();
 	}
 
 	/**
@@ -70,6 +72,7 @@ public class BrewDrinkEvent extends BrewEvent implements Cancellable {
 	public int getQuality() {
 		return quality;
 	}
+	public float getThirst() { return thirst; }
 
 	public void setQuality(int quality) {
 		if (quality > 10 || quality < 0) {
