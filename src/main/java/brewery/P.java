@@ -48,6 +48,7 @@ import org.bukkit.command.PluginCommand;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.event.HandlerList;
 import org.bukkit.plugin.java.JavaPlugin;
+import semarina.SemarinaAPI;
 
 import java.sql.SQLException;
 import java.util.HashMap;
@@ -72,6 +73,7 @@ public class P extends JavaPlugin {
 	public InventoryListener inventoryListener;
 	public WorldListener worldListener;
 	public IntegrationListener integrationListener;
+	public SemarinaAPI semarinaAPI;
 
 	// Registrations
 	public Map<String, Function<ItemLoader, Ingredient>> ingredientLoaders = new HashMap<>();
@@ -182,7 +184,7 @@ public class P extends JavaPlugin {
 				e.printStackTrace();
 			}
 		}
-
+		semarinaAPI = new SemarinaAPI();
 		this.log(this.getDescription().getName() + " enabled!");
 	}
 

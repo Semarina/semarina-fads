@@ -211,7 +211,7 @@ public class BPlayer {
 		}
 
 		if (thirst > 0) {
-			// TODO: add semarina API here
+			P.p.semarinaAPI.hydrate(player.getUniqueId(), thirst);
 		}
 		return true;
 	}
