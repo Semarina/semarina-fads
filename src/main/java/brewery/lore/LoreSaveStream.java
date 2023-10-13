@@ -21,7 +21,7 @@ public class LoreSaveStream extends ByteArrayOutputStream {
 	}
 
 	public LoreSaveStream(ItemMeta meta, int line) {
-		super(128);
+		super(256);
 		this.meta = meta;
 		this.line = line;
 	}

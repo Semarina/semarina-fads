@@ -123,7 +123,7 @@ public class BRecipe {
 		recipe.age = configSectionRecipes.getInt(recipeId + ".age", 0);
 		recipe.difficulty = configSectionRecipes.getInt(recipeId + ".difficulty", 0);
 		recipe.alcohol = configSectionRecipes.getInt(recipeId + ".alcohol", 0);
-		recipe.thirst = configSectionRecipes.getInt(recipeId + ".thirst", 0);
+		recipe.thirst = (float) configSectionRecipes.getDouble(recipeId + ".thirst", 0);
 
 		String col = configSectionRecipes.getString(recipeId + ".color", "BLUE");
 		recipe.color = PotionColor.fromString(col);

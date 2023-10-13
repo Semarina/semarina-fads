@@ -66,11 +66,11 @@ public class Brew implements Cloneable {
 	/**
 	 * A Brew with quality, alc and recipe already set
 	 */
-	public Brew(int quality, int alc, BRecipe recipe, BIngredients ingredients) {
+	public Brew(int quality, int alc, float thirst, BRecipe recipe, BIngredients ingredients) {
 		this.ingredients = ingredients;
 		this.quality = quality;
 		this.alc = alc;
-		this.thirst = recipe.getThirst();
+		this.thirst = thirst;
 		this.currentRecipe = recipe;
 		touch();
 	}
@@ -487,7 +487,9 @@ public class Brew implements Cloneable {
 			quality--;
 		}
 		alc = calcAlcohol();
-		thirst = currentRecipe.getThirst(); // TODO: rethink
+		if (currentRecipe != null) {
+			thirst = currentRecipe.getThirst(); // TODO: rethink
+		}
 
 		setStatic(true, potion);
 		unLabel(potion);
@@ -653,7 +655,9 @@ public class Brew implements Cloneable {
 		}
 		alc = calcAlcohol();
 		updateCustomModelData(potionMeta);
-		thirst = currentRecipe.getThirst(); // TODO: rethink
+		if (currentRecipe != null) {
+			thirst = currentRecipe.getThirst(); // TODO: rethink
+		}
 		// Distill Lore
 		if (currentRecipe != null && BConfig.colorInBrewer != BrewLore.hasColorLore(potionMeta)) {
 			lore.convertLore(BConfig.colorInBrewer);
@@ -727,7 +731,9 @@ public class Brew implements Cloneable {
 			}
 		}
 		alc = calcAlcohol();
-		thirst = currentRecipe.getThirst(); // TODO: rethink
+		if (currentRecipe != null) {
+			thirst = currentRecipe.getThirst(); // TODO: rethink
+		}
 		updateCustomModelData(potionMeta);
 
 		// Lore
@@ -941,7 +947,7 @@ public class Brew implements Cloneable {
 
 	private void loadFromStream(DataInputStream in, byte dataVersion) throws IOException {
 		quality = in.readByte();
-		int bools = in.readUnsignedByte(); //TODO: this is byte which is 0-255 only. change it so that i could inject thirst into it
+		int bools = in.readUnsignedShort();
 		if ((bools & 64) != 0) {
 			alc = in.readShort();
 		}
@@ -958,6 +964,10 @@ public class Brew implements Cloneable {
 		if ((bools & 8) != 0) {
 			recipe = in.readUTF();
 		}
+		if ((bools & 256) != 0) {
+			thirst = in.readFloat();
+		}
+		P.p.debugLog("Loading Brew: " + quality + " " + alc + " " + distillRuns + " " + ageTime + " " + wood + " " + recipe + " " + thirst);
 		unlabeled = (bools & 16) != 0;
 		immutable = (bools & 32) != 0;
 		stripped = (bools & 128) != 0;
@@ -1027,7 +1037,8 @@ public class Brew implements Cloneable {
 		bools |= (immutable 	? 32 : 0);
 		bools |= (alc != 0 		? 64 : 0);
 		bools |= (stripped 		? 128 : 0);
-		out.writeByte(bools);
+		bools |= (thirst != 0 	? 256 : 0);
+		out.writeShort(bools);
 		if (alc != 0) {
 			out.writeShort(alc);
 		}
@@ -1042,6 +1053,9 @@ public class Brew implements Cloneable {
 		}
 		if (currentRecipe != null) {
 			out.writeUTF(currentRecipe.getRecipeName());
+		}
+		if (thirst != 0) {
+			out.writeFloat(thirst);
 		}
 		ingredients.save(out);
 	}

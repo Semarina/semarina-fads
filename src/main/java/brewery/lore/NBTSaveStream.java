@@ -15,7 +15,7 @@ public class NBTSaveStream extends ByteArrayOutputStream {
 	private final ItemMeta meta;
 
 	public NBTSaveStream(ItemMeta meta) {
-		super(128);
+		super(256);
 		this.meta = meta;
 	}
 

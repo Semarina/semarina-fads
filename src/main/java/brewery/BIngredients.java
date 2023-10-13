@@ -119,8 +119,9 @@ public class BIngredients {
 			// Potion is best with cooking only
 			int quality = (int) Math.round((getIngredientQuality(cookRecipe) + getCookingQuality(cookRecipe, false)) / 2.0);
 			int alc = (int) Math.round(cookRecipe.getAlcohol() * ((float) quality / 10.0f));
-			P.p.debugLog("cooked potion has Quality: " + quality + ", Alc: " + alc);
-			brew = new Brew(quality, alc, cookRecipe, this);
+			float thirst = cookRecipe.getThirst();
+			P.p.debugLog("cooked potion has Quality: " + quality + ", Alc: " + alc + ", Thirst: " + thirst);
+			brew = new Brew(quality, alc, thirst, cookRecipe, this);
 			BrewLore lore = new BrewLore(brew, potionMeta);
 			lore.updateQualityStars(false);
 			lore.updateCustomLore();
